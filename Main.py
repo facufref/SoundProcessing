@@ -1,10 +1,10 @@
-from SoundProcessor import getMFCC
+from SoundProcessor import get_mfcc
 from scipy.io import wavfile
 
 
 def main():
     file = wavfile.read('wavfiles/Violin1.wav')
-    mfcc = getMFCC(file)
+    mfcc = get_mfcc(file)
     print(mfcc)
 
 

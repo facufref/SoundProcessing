@@ -1,12 +1,12 @@
 import numpy as np
 from scipy.fftpack import dct
 
-def getMFCC(file):
+
+def get_mfcc(file):
     sample_rate, signal = file
     signal = signal[0:int(3.5 * sample_rate)]  # Keep the first 3.5 seconds
     # Pre-Emphasis
-    pre_emphasis = 0.97
-    emphasized_signal = np.append(signal[0], signal[1:] - pre_emphasis * signal[:-1])
+    emphasized_signal = pre_emphasize_signal(signal)
     # Framing
     frame_size = 0.025
     frame_stride = 0.01
@@ -61,3 +61,8 @@ def getMFCC(file):
     filter_banks -= (np.mean(filter_banks, axis=0) + 1e-8)
     mfcc -= (np.mean(mfcc, axis=0) + 1e-8)
     return mfcc
+
+
+def pre_emphasize_signal(signal, filter_coefficient=0.97):
+    emphasized_signal = np.append(signal[0], signal[1:] - filter_coefficient * signal[:-1])
+    return emphasized_signal
