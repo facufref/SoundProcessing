@@ -2,6 +2,11 @@ import numpy as np
 from scipy.fftpack import dct
 
 
+def get_mean_frames(frames):
+    mean_frames = np.mean(frames, axis=0)
+    return mean_frames
+
+
 def get_processed_mfcc(file):
     filter_banks = get_filter_banks_from_file(file)
     mfcc = apply_mfcc(filter_banks)  # Mel-frequency Cepstral Coefficients (MFCCs)

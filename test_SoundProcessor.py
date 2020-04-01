@@ -120,6 +120,14 @@ class SoundProcessorTest(unittest.TestCase):
         self.assertEqual(round(mfcc[1][0], 5), 1.00000)
         self.assertEqual(round(mfcc[1][1], 5), 1.00000)
 
+    def test_get_mean_frames_should_return_valid_array(self):
+        mfcc = np.array([[1.0, 2.0, 3.0],
+                         [4.0, 5.0, 6.0]])
+        mean_mfcc = get_mean_frames(mfcc)
+        self.assertEqual(mean_mfcc.shape, (3, ))
+        self.assertEqual(mean_mfcc[0], 2.5)
+        self.assertEqual(mean_mfcc[1], 3.5)
+        self.assertEqual(mean_mfcc[2], 4.5)
 
 
 
