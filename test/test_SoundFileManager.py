@@ -1,5 +1,4 @@
-from SoundFileManager import *
-import numpy as np
+from SoundDataManager import *
 import pandas as pd
 import unittest
 
@@ -13,7 +12,7 @@ class SoundProcessorTest(unittest.TestCase):
         pass
 
     def test_get_target_should_return_valid_target(self):
-        df = pd.read_csv('wavfiles/Test/labels_SoundFileManagerTest.csv')
+        df = pd.read_csv('wavfiles/labels_SoundFileManagerTest.csv')
         target = get_target(df)
         self.assertEqual(4, len(target))
         self.assertEqual(1, target[0])
@@ -22,8 +21,8 @@ class SoundProcessorTest(unittest.TestCase):
         self.assertEqual(0, target[3])
 
     def test_get_data_and_filenames_should_return_data_and_filenames(self):
-        df = pd.read_csv('wavfiles/Test/labels_SoundFileManagerTest.csv')
-        data, filenames = get_data_and_filenames(df, 'wavfiles/Test/')
+        df = pd.read_csv('wavfiles/labels_SoundFileManagerTest.csv')
+        data, filenames = get_data_and_filenames(df, 'wavfiles/')
         self.assertEqual((4, 12), data.shape)
         self.assertEqual(4, len(filenames))
         self.assertEqual('Violin1.wav', filenames[0])
