@@ -36,3 +36,18 @@ def get_target(df):
     target = df.__getitem__('class')
     return target
 
+
+def pre_process(X_test, X_train):
+    """One way to pre process I found on "Introduction to machine learning with Python: a guide for data scientists." Chapter 2
+        There must be a better way to do this"""
+    # compute the mean value per feature on the training set
+    mean_on_train = X_train.mean(axis=0)
+    # compute the standard deviation of each feature on the training set
+    std_on_train = X_train.std(axis=0)
+    # subtract the mean, scale by inverse standard deviation
+    # afterwards, mean=0 and std=1
+    X_train_scaled = (X_train - mean_on_train) / std_on_train
+    # use THE SAME transformation (using training mean and std) on the test set
+    X_test_scaled = (X_test - mean_on_train) / std_on_train
+    return X_test_scaled, X_train_scaled
+
