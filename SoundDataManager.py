@@ -7,7 +7,7 @@ import numpy as np
 
 def get_train_test(data, filenames, target):
     indices = np.arange(len(filenames))
-    X_train, X_test, y_train, y_test, idx1, idx2 = train_test_split(data, target, indices, random_state=0, shuffle=True)
+    X_train, X_test, y_train, y_test, idx1, idx2 = train_test_split(data, target, indices, random_state=0, shuffle=True, train_size=0.75)
     return X_test, X_train, idx1, idx2, y_test, y_train
 
 
