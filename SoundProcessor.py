@@ -8,27 +8,37 @@ def get_mean_frames(frames):
 
 
 def get_processed_mfcc(file):
-    filter_banks = get_filter_banks_from_file(file)
-    mfcc = apply_mfcc(filter_banks)  # Mel-frequency Cepstral Coefficients (MFCCs)
-    mean_normalize(mfcc)  # Mean Normalization
-    return mfcc
+    filter_banks_list = get_filter_banks_from_file(file, 3.5)
+    mfcc_list = []
+    for filter_banks in filter_banks_list:
+        mfcc = apply_mfcc(filter_banks)  # Mel-frequency Cepstral Coefficients (MFCCs)
+        mean_normalize(mfcc)  # Mean Normalization
+        mfcc_list.append(mfcc)
+    return mfcc_list
 
 
 def get_processed_filter_banks(file):
-    filter_banks = get_filter_banks_from_file(file)
-    mean_normalize(filter_banks)  # Mean Normalization
-    return filter_banks
+    filter_banks_list = get_filter_banks_from_file(file, 3.5)
+    for filter_banks in filter_banks_list:
+        mean_normalize(filter_banks)  # Mean Normalization
+    return filter_banks_list
 
 
-def get_filter_banks_from_file(file):
+def get_filter_banks_from_file(file, chunk_size_in_seconds):
     sample_rate, signal = file
-    signal = signal[0:int(3.5 * sample_rate)]  # Keep the first 3.5 seconds
-    emphasized_signal = pre_emphasize_signal(signal)  # Pre-Emphasis
-    frame_length, frames = frame_signal(emphasized_signal, sample_rate)  # Framing
-    frames = apply_hamming_window(frame_length, frames)  # Window
-    nfft, pow_frames = apply_stft(frames)  # Fourier-Transform and Power Spectrum
-    filter_banks = apply_filter_banks(nfft, pow_frames, sample_rate)  # Filter Banks
-    return filter_banks
+    chunk_size = int(chunk_size_in_seconds * sample_rate)
+    signals = list(chunks(signal, chunk_size))
+    if len(signals[-1]) < chunk_size:  # Remove last element if it is not the same size than the others
+        signals.remove(signals[-1])
+    filter_banks_list = []
+    for signal in signals:
+        emphasized_signal = pre_emphasize_signal(signal)  # Pre-Emphasis
+        frame_length, frames = frame_signal(emphasized_signal, sample_rate)  # Framing
+        frames = apply_hamming_window(frame_length, frames)  # Window
+        nfft, pow_frames = apply_stft(frames)  # Fourier-Transform and Power Spectrum
+        filter_banks = apply_filter_banks(nfft, pow_frames, sample_rate)  # Filter Banks
+        filter_banks_list.append(filter_banks)
+    return filter_banks_list
 
 
 def pre_emphasize_signal(signal, filter_coefficient=0.97):
@@ -99,3 +109,9 @@ def apply_sinusoidal_liftering(mfcc, cep_lifter=22):
 
 def mean_normalize(frames):
     frames -= (np.mean(frames, axis=0) + 1e-8)
+
+
+def chunks(lst, n):
+    """Yield successive n-sized chunks from lst."""
+    for i in range(0, len(lst), n):
+        yield lst[i:i + n]

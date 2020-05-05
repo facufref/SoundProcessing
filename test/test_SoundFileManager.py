@@ -11,21 +11,21 @@ class SoundProcessorTest(unittest.TestCase):
     def tearDown(self) -> None:
         pass
 
-    def test_get_target_should_return_valid_target(self):
-        df = pd.read_csv('wavfiles/labels_SoundFileManagerTest.csv')
-        target = get_target(df)
-        self.assertEqual(4, len(target))
-        self.assertEqual(1, target[0])
-        self.assertEqual(1, target[1])
-        self.assertEqual(0, target[2])
-        self.assertEqual(0, target[3])
-
     def test_get_data_and_filenames_should_return_data_and_filenames(self):
         df = pd.read_csv('wavfiles/labels_SoundFileManagerTest.csv')
-        data, filenames = get_data_and_filenames(df, 'wavfiles/')
-        self.assertEqual((4, 12), data.shape)
-        self.assertEqual(4, len(filenames))
+        data, target, filenames = get_data_target_filenames(df, 'wavfiles/')
+        self.assertEqual((21, 12), data.shape)
+        self.assertEqual(21, len(filenames))
+        self.assertEqual(21, len(target))
         self.assertEqual('Violin1.wav', filenames[0])
-        self.assertEqual('Violin2.wav', filenames[1])
-        self.assertEqual('Monster1.wav', filenames[2])
-        self.assertEqual('Monster2.wav', filenames[3])
+        self.assertEqual('Violin1.wav', filenames[11])
+        self.assertEqual('Violin2.wav', filenames[12])
+        self.assertEqual('Violin2.wav', filenames[18])
+        self.assertEqual('Monster1.wav', filenames[19])
+        self.assertEqual('Monster1.wav', filenames[20])
+        self.assertEqual([1], target[0])
+        self.assertEqual([1], target[11])
+        self.assertEqual([1], target[12])
+        self.assertEqual([1], target[18])
+        self.assertEqual([0], target[19])
+        self.assertEqual([0], target[20])

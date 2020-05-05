@@ -13,28 +13,25 @@ def get_train_test(data, filenames, target):
 
 def get_dataset_from_wavfile(root, file_name):
     df = pd.read_csv(root + file_name)
-    target = get_target(df)
-    data, filenames = get_data_and_filenames(df, root)
+    data, target, filenames = get_data_target_filenames(df, root)
     return data, target, filenames
 
 
-def get_data_and_filenames(df, root):
+def get_data_target_filenames(df, root):
     list_mfcc = []
     filenames = []
+    target = []
     df.set_index('fname', inplace=True)
     for f in df.index:
-        filenames.append(f)
         file = wavfile.read(root + f)
-        mfcc = get_processed_mfcc(file)
-        mean_mfcc = get_mean_frames(mfcc)  # Mean of cepstral coefficients, maybe there's a better way to fit the data
-        list_mfcc.append(mean_mfcc)
+        mfcc_list = get_processed_mfcc(file)
+        for mfcc in mfcc_list:
+            mean_mfcc = get_mean_frames(mfcc)  # Mean of cepstral coefficients, maybe there's a better way to fit the data
+            list_mfcc.append(mean_mfcc)
+            filenames.append(f)
+            target.append([df.at[f, 'class']])
     data = np.vstack(list_mfcc)
-    return data, filenames
-
-
-def get_target(df):
-    target = df.__getitem__('class')
-    return target
+    return data, target, filenames
 
 
 def pre_process(X_test, X_train):
