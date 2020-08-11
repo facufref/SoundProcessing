@@ -1,3 +1,4 @@
+import pyparsing
 from SoundProcessor import get_processed_mfcc, get_mean_frames
 from scipy.io import wavfile
 import pandas as pd
@@ -29,7 +30,7 @@ def get_data_target_filenames(df, root):
             mean_mfcc = get_mean_frames(mfcc)  # Mean of cepstral coefficients, maybe there's a better way to fit the data
             list_mfcc.append(mean_mfcc)
             filenames.append(f)
-            target.append([df.at[f, 'class']])
+            target.append([get_first_match(df, f, 'class')])
     data = np.vstack(list_mfcc)
     return data, target, filenames
 
@@ -48,3 +49,12 @@ def pre_process(X_test, X_train):
     X_test_scaled = (X_test - mean_on_train) / std_on_train
     return X_test_scaled, X_train_scaled
 
+
+def get_first_match(df, row, column):
+    match = df.loc[row, column]
+
+    if isinstance(match, pyparsing.basestring):
+        return match
+
+    match = np.nan if match.empty else match.iat[0]
+    return match

@@ -4,9 +4,9 @@ from classifiers.SoundClassifier import *
 
 
 def main():
-    data, target, filenames = get_dataset_from_wavfile('wavfiles/Drones/', 'labels.csv')
+    data, target, filenames = get_dataset_from_wavfile('wavfiles/Violins/', 'labels.csv')
     X_test, X_train, idx1, idx2, y_test, y_train = get_train_test(data, filenames, target)
-    clf = SoundClassifier('neuralNetworks')
+    clf = SoundClassifier('svm')
     X_test, X_train = pre_process(X_test, X_train)
     clf.train_classifier(X_train, y_train)
 
