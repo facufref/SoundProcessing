@@ -18,6 +18,16 @@ def get_dataset_from_wavfile(root, file_name):
     return data, target, filenames
 
 
+def get_dataset_from_array(sample_rate, signal, chunk_size_in_seconds):
+    list_mfcc = []
+    mfcc_list = get_processed_mfcc(sample_rate, signal, chunk_size_in_seconds)
+    for mfcc in mfcc_list:
+        mean_mfcc = get_mean_frames(mfcc)  # Mean of cepstral coefficients, maybe there's a better way to fit the data
+        list_mfcc.append(mean_mfcc)
+    data = np.vstack(list_mfcc)
+    return data
+
+
 def get_data_target_filenames(df, root):
     list_mfcc = []
     filenames = []
@@ -25,12 +35,13 @@ def get_data_target_filenames(df, root):
     df.set_index('fname', inplace=True)
     for f in df.index:
         file = wavfile.read(root + f)
-        mfcc_list = get_processed_mfcc(file)
+        sample_rate, signal = file
+        mfcc_list = get_processed_mfcc(sample_rate, signal, 3.5)
         for mfcc in mfcc_list:
             mean_mfcc = get_mean_frames(mfcc)  # Mean of cepstral coefficients, maybe there's a better way to fit the data
             list_mfcc.append(mean_mfcc)
             filenames.append(f)
-            target.append([get_first_match(df, f, 'class')])
+            target.append([get_dataframe_first_match(df, f, 'class')])
     data = np.vstack(list_mfcc)
     return data, target, filenames
 
@@ -50,7 +61,7 @@ def pre_process(X_test, X_train):
     return X_test_scaled, X_train_scaled
 
 
-def get_first_match(df, row, column):
+def get_dataframe_first_match(df, row, column):
     match = df.loc[row, column]
 
     if isinstance(match, pyparsing.basestring):

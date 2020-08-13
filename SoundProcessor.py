@@ -7,8 +7,8 @@ def get_mean_frames(frames):
     return mean_frames
 
 
-def get_processed_mfcc(file):
-    filter_banks_list = get_filter_banks_from_file(file, 3.5)
+def get_processed_mfcc(sample_rate, signal, chunk_size_in_seconds):
+    filter_banks_list = get_filter_banks_from_file(sample_rate, signal, chunk_size_in_seconds)
     mfcc_list = []
     for filter_banks in filter_banks_list:
         mfcc = apply_mfcc(filter_banks)  # Mel-frequency Cepstral Coefficients (MFCCs)
@@ -17,15 +17,14 @@ def get_processed_mfcc(file):
     return mfcc_list
 
 
-def get_processed_filter_banks(file):
-    filter_banks_list = get_filter_banks_from_file(file, 3.5)
+def get_processed_filter_banks(sample_rate, signal, chunk_size_in_seconds):
+    filter_banks_list = get_filter_banks_from_file(sample_rate, signal, chunk_size_in_seconds)
     for filter_banks in filter_banks_list:
         mean_normalize(filter_banks)  # Mean Normalization
     return filter_banks_list
 
 
-def get_filter_banks_from_file(file, chunk_size_in_seconds):
-    sample_rate, signal = file
+def get_filter_banks_from_file(sample_rate, signal, chunk_size_in_seconds):
     chunk_size = int(chunk_size_in_seconds * sample_rate)
     signals = list(chunks(signal, chunk_size))
     if len(signals[-1]) < chunk_size:  # Remove last element if it is not the same size than the others

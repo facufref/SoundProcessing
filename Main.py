@@ -1,9 +1,10 @@
-from SoundDataManager import get_dataset_from_wavfile, get_train_test, pre_process
+from SoundDataManager import get_dataset_from_wavfile, get_train_test, pre_process, get_dataset_from_array
+from SoundRecorder import *
 from sklearn.metrics import classification_report
 from classifiers.SoundClassifier import *
 
 
-def main():
+def get_classifier():
     data, target, filenames = get_dataset_from_wavfile('wavfiles/Violins/', 'labels.csv')
     X_test, X_train, idx1, idx2, y_test, y_train = get_train_test(data, filenames, target)
     clf = SoundClassifier('svm')
@@ -18,6 +19,16 @@ def main():
     # clf.show_feature_importance(data, target)
     # clf.print_decision_function(X_test)
     # clf.print_prediction_probability(X_test)
+    return clf
+
+
+def main():
+    clf = get_classifier()
+    recording = get_recording()
+    recording_mfcc_list = get_dataset_from_array(44100, recording, 3.5)
+    prediction = clf.get_predictions(recording_mfcc_list)
+    print(f" The prediction for the recording is '{prediction}")
+    # write_recording(recording, 'output.wav')
 
 
 if __name__ == '__main__':
