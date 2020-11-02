@@ -19,30 +19,122 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5883c14d-f0cc-4105-ae09-bc5b48f14275" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SoundRecorder.py" afterDir="false" />
+    <list default="true" id="ed4eb55b-b070-4713-bd60-0b8d7c38cb83" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_6 Axis Gyro unloaded 1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_6 Axis Gyro unloaded 2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_6 Axis Gyro unloaded 3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_6 Axis Gyro unloaded 4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_Syma X20 unloaded 1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_Syma X20 unloaded 2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_Syma X20 unloaded 3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_Syma X20 unloaded 4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_Syma X20 unloaded 5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_Syma X5 unloaded 1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_Syma X5 unloaded 2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_Syma X5 unloaded 3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_Syma X5 unloaded 4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_Syma X5 unloaded 5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_Syma loaded 1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_Syma loaded 2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_Syma loaded 3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_Syma loaded 4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_Syma loaded 5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_Syma loaded6.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_Tarantula X6 unloaded 1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_Tarantula X6 unloaded 2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_Tarantula X6 unloaded 3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_Tarantula X6 unloaded 4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_Tarantula X6 unloaded 5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_Tarantula X6 unloaded 6.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_Tarantula X6 unloaded 7.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_Tarantula X6 unloaded 8.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_WSU_P2_DOWN_UNLOADED.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_WSU_P2_HIGH_LOADED_DOWN.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_WSU_P2_LOADED_BACK_AND_FORTH.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_WSU_P2_LOADED_BACK_AND_FORTH_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_WSU_P2_LOADED_up_and_down.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_WSU_P2_UNLOADED_BACK_AND_FORTH.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_WSU_P2_UNLOADED_UP_AND_DOWN.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_background_06_02_01.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_background_06_02_02.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_background_06_02_03.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_background_06_02_04.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_background_06_02_05.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_background_06_02_06.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_background_06_02_07.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_background_06_02_08.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_background_06_02_09.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_background_06_02_10.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_background_06_02_11.txt.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_background_06_02_11.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_background_06_02_12.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_background_06_02_13.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_background_06_02_14.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_background_06_02_15.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_background_06_02_16.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_background_06_02_18.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_background_06_02_19.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_background_06_02_20.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_background_07_02_17.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_background_eric_doing_stuff.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_background_in_air_iris.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_background_in_air_iris_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_background_in_air_iris_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_canopy_heavy_wind.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_canopy_up_01.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_canopy_up_03.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_eric_survey.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_foo.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_gator.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_goo2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_in_air_iris_far_away.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_in_air_iris_over_home_base.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_loaded.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_loaded1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_loaded3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_long_background_01.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_long_background_02.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_long_background_03.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_long_background_04.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_long_background_05.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_long_background_06.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_long_background_07.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_motorcycle.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_purdue_P2_unloaded_up_down.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_train.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_train04.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_train2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_train_03.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_train_and_gator.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_unloaded.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_unloaded1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_unloaded2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wavfiles/Drones/r8_unloaded4.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SoundProcessing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SoundProcessing.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SoundDataManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/SoundDataManager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SoundProcessor.py" beforeDir="false" afterPath="$PROJECT_DIR$/SoundProcessor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wavfiles/Violins/labels.csv" beforeDir="false" afterPath="$PROJECT_DIR$/wavfiles/Violins/labels.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classifiers/SoundClassifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/SoundClassifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classifiers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wavfiles/.ipynb_checkpoints/Pie chart Classifier-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wavfiles/Drones/labels.csv" beforeDir="false" afterPath="$PROJECT_DIR$/wavfiles/Drones/labels.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1b0L1AnQmdnUsz3YC5SzS0j0o10" />
+  <component name="JupyterTrust" id="04db8175-7c21-49e9-ae09-adc1897ecb06" />
+  <component name="ProjectId" id="1jk9HoPo1aY7gm2vIlo2CbUIlPZ" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -51,12 +143,40 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Main.py" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_SoundFileManager.py">
-    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Main">
+    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SoundProcessing" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="SoundProcessing" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -68,16 +188,17 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test_SoundFileManager.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_SoundProcessor.SoundProcessorTest.test_apply_mfcc_should_return_valid_mfcc" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="SoundProcessing" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -86,43 +207,39 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_SoundFileManager.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;test_SoundProcessor.SoundProcessorTest.test_apply_mfcc_should_return_valid_mfcc&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test_SoundProcessor.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="SoundProcessing" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_SoundProcessor.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
+    <list>
+      <item itemvalue="Python.Main" />
+      <item itemvalue="Python tests.Unittests for test_SoundProcessor.SoundProcessorTest.test_apply_mfcc_should_return_valid_mfcc" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in test_SoundFileManager.py" />
-        <item itemvalue="Python tests.Unittests in test_SoundProcessor.py" />
-        <item itemvalue="Python.Main" />
+        <item itemvalue="Python tests.Unittests for test_SoundProcessor.SoundProcessorTest.test_apply_mfcc_should_return_valid_mfcc" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5883c14d-f0cc-4105-ae09-bc5b48f14275" name="Default Changelist" comment="" />
-      <created>1596741333051</created>
+      <changelist id="ed4eb55b-b070-4713-bd60-0b8d7c38cb83" name="Default Changelist" comment="" />
+      <created>1604337141623</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1596741333051</updated>
+      <updated>1604337141623</updated>
+      <workItem from="1604337143192" duration="688000" />
+      <workItem from="1604337875618" duration="1181000" />
+      <workItem from="1604339233405" duration="2787000" />
+      <workItem from="1604342470968" duration="12696000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -136,58 +253,73 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596816232700">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604342778264">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1596816232700" />
-    <state width="1364" height="440" key="DebuggerActiveHint" timestamp="1596821716180">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1604342778264" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604342752912">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1364" height="440" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1596821716180" />
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1597333808002">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="740" y="275" key="FileChooserDialogImpl/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1604342752912" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1604356446248">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597333808002" />
-    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1597333808001">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1604356446248" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1604356446247">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597333808001" />
-    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1597333808001">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1604356446247" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1604356446247">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597333808001" />
-    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1597333808002">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1604356446247" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1604356446247">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597333808002" />
-    <state width="1345" height="214" key="GridCell.Tab.1.bottom" timestamp="1597333678067">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1604356446247" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1604356446248">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="214" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597333678067" />
-    <state width="1345" height="214" key="GridCell.Tab.1.center" timestamp="1597333678067">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1604356446248" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1604356446248">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="214" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1597333678067" />
-    <state width="1345" height="214" key="GridCell.Tab.1.left" timestamp="1597333678067">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1604356446248" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1604356446248">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="214" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1597333678067" />
-    <state width="1345" height="214" key="GridCell.Tab.1.right" timestamp="1597333678067">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1604356446248" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1604356446248">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="214" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1597333678067" />
-    <state x="184" y="9" key="SettingsEditor" timestamp="1597332712129">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1604356446248" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1604345893624">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1597332712129" />
-    <state width="691" height="372" key="XDebugger.FullValuePopup" timestamp="1597332913988">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="461" y="165" key="SettingsEditor/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1604345893624" />
+    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1604355612538">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="691" height="372" key="XDebugger.FullValuePopup/0.0.1366.728@0.0.1366.728" timestamp="1597332913988" />
+    <state width="968" height="528" key="XDebugger.FullValuePopup/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1604355612538" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/test_SoundProcessor.py</url>
+          <line>111</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Main.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -198,9 +330,12 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="df.loc[f]" language="Python" />
-        <watch expression="target" language="Python" />
+        <watch expression="target[train_index]" language="Python" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SoundProcessing$Main.coverage" NAME="Main Coverage Results" MODIFIED="1604356325378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SoundProcessing$Unittests_for_test_SoundProcessor_SoundProcessorTest_test_apply_mfcc_should_return_valid_mfcc.coverage" NAME="Unittests for test_SoundProcessor.SoundProcessorTest.test_apply_mfcc_should_return_valid_mfcc Coverage Results" MODIFIED="1604346823455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
   </component>
 </project>

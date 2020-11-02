@@ -21,7 +21,7 @@ class SoundClassifier:
         elif algorithm == 'decisionTree':
             self._classifier = DecisionTreeClassifier(random_state=0)  # alternative => max_depth=4
         elif algorithm == 'randomForest':
-            self._classifier = RandomForestClassifier(n_estimators=100, random_state=0)
+            self._classifier = RandomForestClassifier(n_estimators=1000, max_features=1300, max_depth=8, random_state=0)
         elif algorithm == 'gradientBoosting':
             self._classifier = GradientBoostingClassifier(random_state=0)  # alternative => max_depth=1, learning_rate=0.01
         elif algorithm == 'svm':
@@ -61,6 +61,6 @@ class SoundClassifier:
         print(self._classifier.predict(X_test))
 
 
-def print_predictions(predictions, filenames, idx2):
+def print_predictions(predictions, filenames, test_index):
     for i in range(0, len(predictions)):
-        print(f" The file '{filenames[idx2[i]]} is {str(predictions[i])}")
+        print(f" The file '{filenames[test_index[i]]} is {str(predictions[i])}")

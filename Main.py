@@ -1,18 +1,18 @@
 from SoundDataManager import get_dataset_from_wavfile, get_train_test, pre_process, get_dataset_from_array
 from SoundRecorder import *
 from sklearn.metrics import classification_report
-from classifiers.SoundClassifier import *
+from SoundClassifier import *
 
 
 def get_classifier():
-    data, target, filenames = get_dataset_from_wavfile('wavfiles/Violins/', 'labels.csv')
-    X_test, X_train, idx1, idx2, y_test, y_train = get_train_test(data, filenames, target)
-    clf = SoundClassifier('svm')
+    data, target, filenames = get_dataset_from_wavfile('wavfiles/Drones/', 'labels.csv')
+    X_test, X_train, y_test, y_train, train_index, test_index = get_train_test(data, target)
+    clf = SoundClassifier('randomForest')
     X_test, X_train = pre_process(X_test, X_train)
     clf.train_classifier(X_train, y_train)
 
     predictions = clf.get_predictions(X_test)
-    print_predictions(predictions, filenames, idx2)
+    print_predictions(predictions, filenames, test_index)
     print(f"Accuracy Train =  {str(clf.get_accuracy(X_train, y_train))}")
     print(f"Accuracy Test  =  {str(clf.get_accuracy(X_test, y_test))}")
     print(classification_report(y_test, predictions))
@@ -24,11 +24,6 @@ def get_classifier():
 
 def main():
     clf = get_classifier()
-    recording = get_recording()
-    recording_mfcc_list = get_dataset_from_array(44100, recording, 3.5)
-    prediction = clf.get_predictions(recording_mfcc_list)
-    print(f" The prediction for the recording is '{prediction}")
-    # write_recording(recording, 'output.wav')
 
 
 if __name__ == '__main__':

@@ -2,11 +2,6 @@ import numpy as np
 from scipy.fftpack import dct
 
 
-def get_mean_frames(frames):
-    mean_frames = np.mean(frames, axis=0)
-    return mean_frames
-
-
 def get_processed_mfcc(sample_rate, signal, chunk_size_in_seconds):
     filter_banks_list = get_filter_banks_from_file(sample_rate, signal, chunk_size_in_seconds)
     mfcc_list = []

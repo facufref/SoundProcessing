@@ -1,15 +1,17 @@
 import pyparsing
-from SoundProcessor import get_processed_mfcc, get_mean_frames
+from SoundProcessor import get_processed_mfcc
 from scipy.io import wavfile
 import pandas as pd
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, StratifiedShuffleSplit
 import numpy as np
 
 
-def get_train_test(data, filenames, target):
-    indices = np.arange(len(filenames))
-    X_train, X_test, y_train, y_test, idx1, idx2 = train_test_split(data, target, indices, random_state=0, shuffle=True, train_size=0.75)
-    return X_test, X_train, idx1, idx2, y_test, y_train
+def get_train_test(data, target):
+    split = StratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=0)
+    for train_index, test_index in split.split(data, target):
+        X_train, X_test = data[train_index], data[test_index]
+        y_train, y_test = target[train_index], target[test_index]
+    return X_test, X_train, y_test, y_train, train_index, test_index
 
 
 def get_dataset_from_wavfile(root, file_name):
@@ -22,8 +24,8 @@ def get_dataset_from_array(sample_rate, signal, chunk_size_in_seconds):
     list_mfcc = []
     mfcc_list = get_processed_mfcc(sample_rate, signal, chunk_size_in_seconds)
     for mfcc in mfcc_list:
-        mean_mfcc = get_mean_frames(mfcc)  # Mean of cepstral coefficients, maybe there's a better way to fit the data
-        list_mfcc.append(mean_mfcc)
+        flattened_mfcc = mfcc.flatten()
+        list_mfcc.append(flattened_mfcc)
     data = np.vstack(list_mfcc)
     return data
 
@@ -36,14 +38,15 @@ def get_data_target_filenames(df, root):
     for f in df.index:
         file = wavfile.read(root + f)
         sample_rate, signal = file
+        signal = stereo_to_mono(signal)
         mfcc_list = get_processed_mfcc(sample_rate, signal, 3.5)
         for mfcc in mfcc_list:
-            mean_mfcc = get_mean_frames(mfcc)  # Mean of cepstral coefficients, maybe there's a better way to fit the data
-            list_mfcc.append(mean_mfcc)
+            flattened_mfcc = mfcc.flatten()
+            list_mfcc.append(flattened_mfcc)
             filenames.append(f)
             target.append([get_dataframe_first_match(df, f, 'class')])
     data = np.vstack(list_mfcc)
-    return data, target, filenames
+    return data, np.array(target), filenames
 
 
 def pre_process(X_test, X_train):
@@ -69,3 +72,9 @@ def get_dataframe_first_match(df, row, column):
 
     match = np.nan if match.empty else match.iat[0]
     return match
+
+
+def stereo_to_mono(signal):
+    if signal.ndim == 2:
+        return signal[:, 0]/2 + signal[:, 1]/2
+    return signal
