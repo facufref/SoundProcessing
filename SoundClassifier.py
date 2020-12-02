@@ -1,5 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from sklearn.gaussian_process.kernels import RationalQuadratic
+from sklearn.naive_bayes import GaussianNB
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import LinearSVC
@@ -8,6 +10,8 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.svm import SVC
 from sklearn.neural_network import MLPClassifier
+from sklearn.gaussian_process import GaussianProcessClassifier
+from sklearn.linear_model import SGDClassifier
 
 
 class SoundClassifier:
@@ -18,16 +22,23 @@ class SoundClassifier:
             self._classifier = LogisticRegression()  # alternative => (C=100) / (C=0.01)
         elif algorithm == 'linearMulti':
             self._classifier = LinearSVC()
+        elif algorithm == 'sgd':
+            self._classifier = SGDClassifier(random_state=0)
         elif algorithm == 'decisionTree':
             self._classifier = DecisionTreeClassifier(random_state=0)  # alternative => max_depth=4
         elif algorithm == 'randomForest':
-            self._classifier = RandomForestClassifier(n_estimators=1000, max_features=1300, max_depth=8, random_state=0)
+            self._classifier = RandomForestClassifier(n_estimators=10, max_features=1300, max_depth=8, random_state=0)
         elif algorithm == 'gradientBoosting':
             self._classifier = GradientBoostingClassifier(random_state=0)  # alternative => max_depth=1, learning_rate=0.01
         elif algorithm == 'svm':
-            self._classifier = SVC()  # alternative => C=1000, gamma=1000. Also pre-process data
+            self._classifier = SVC(C=1.3, kernel='rbf', gamma='scale')  # alternative => C=1000, gamma=1000. Also pre-process data
         elif algorithm == 'neuralNetworks':
             self._classifier = MLPClassifier(random_state=0)  # alternative => max_iter=1000, alpha=1. Also pre-process data
+        elif algorithm == 'gmm':
+            self._classifier = GaussianProcessClassifier(kernel=RationalQuadratic(alpha=1, length_scale=1), random_state=0)
+        elif algorithm == 'gnb':
+            self._classifier = GaussianNB()
+
         else:
             print('Algorithm not found')
 

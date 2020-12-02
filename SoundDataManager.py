@@ -1,8 +1,8 @@
 import pyparsing
-from SoundProcessor import get_processed_mfcc
+from SoundProcessor import get_processed_mfcc, get_processed_filter_banks
 from scipy.io import wavfile
 import pandas as pd
-from sklearn.model_selection import train_test_split, StratifiedShuffleSplit
+from sklearn.model_selection import StratifiedShuffleSplit
 import numpy as np
 
 
@@ -14,9 +14,9 @@ def get_train_test(data, target):
     return X_test, X_train, y_test, y_train, train_index, test_index
 
 
-def get_dataset_from_wavfile(root, file_name):
+def get_dataset_from_wavfile(root, file_name, chunk_size_in_seconds, feature_type):
     df = pd.read_csv(root + file_name)
-    data, target, filenames = get_data_target_filenames(df, root)
+    data, target, filenames = get_data_target_filenames(df, root, chunk_size_in_seconds, feature_type)
     return data, target, filenames
 
 
@@ -30,7 +30,7 @@ def get_dataset_from_array(sample_rate, signal, chunk_size_in_seconds):
     return data
 
 
-def get_data_target_filenames(df, root):
+def get_data_target_filenames(df, root, chunk_size_in_seconds, feature_type):
     list_mfcc = []
     filenames = []
     target = []
@@ -39,7 +39,14 @@ def get_data_target_filenames(df, root):
         file = wavfile.read(root + f)
         sample_rate, signal = file
         signal = stereo_to_mono(signal)
-        mfcc_list = get_processed_mfcc(sample_rate, signal, 3.5)
+
+        if feature_type == 'mfcc':
+            mfcc_list = get_processed_mfcc(sample_rate, signal, chunk_size_in_seconds)
+        elif feature_type == 'filter_banks':
+            mfcc_list = get_processed_filter_banks(sample_rate, signal, chunk_size_in_seconds)
+        else:
+            raise Exception(f'No feature type with value {feature_type}')
+
         for mfcc in mfcc_list:
             flattened_mfcc = mfcc.flatten()
             list_mfcc.append(flattened_mfcc)
