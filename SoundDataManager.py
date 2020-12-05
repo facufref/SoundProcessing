@@ -4,6 +4,7 @@ from scipy.io import wavfile
 import pandas as pd
 from sklearn.model_selection import StratifiedShuffleSplit
 import numpy as np
+import math
 
 
 def get_train_test(data, target):
@@ -14,9 +15,9 @@ def get_train_test(data, target):
     return X_test, X_train, y_test, y_train, train_index, test_index
 
 
-def get_dataset_from_wavfile(root, file_name, chunk_size_in_seconds, feature_type):
+def get_dataset_from_wavfile(root, file_name, chunk_size_in_seconds, feature_type, class_column):
     df = pd.read_csv(root + file_name)
-    data, target, filenames = get_data_target_filenames(df, root, chunk_size_in_seconds, feature_type)
+    data, target, filenames = get_data_target_filenames(df, root, chunk_size_in_seconds, feature_type, class_column)
     return data, target, filenames
 
 
@@ -30,7 +31,7 @@ def get_dataset_from_array(sample_rate, signal, chunk_size_in_seconds):
     return data
 
 
-def get_data_target_filenames(df, root, chunk_size_in_seconds, feature_type):
+def get_data_target_filenames(df, root, chunk_size_in_seconds, feature_type, class_column):
     list_mfcc = []
     filenames = []
     target = []
@@ -48,10 +49,13 @@ def get_data_target_filenames(df, root, chunk_size_in_seconds, feature_type):
             raise Exception(f'No feature type with value {feature_type}')
 
         for mfcc in mfcc_list:
+            file_class = get_dataframe_first_match(df, f, class_column)
+            if file_class == 'null':
+                continue
             flattened_mfcc = mfcc.flatten()
             list_mfcc.append(flattened_mfcc)
             filenames.append(f)
-            target.append([get_dataframe_first_match(df, f, 'class')])
+            target.append([file_class])
     data = np.vstack(list_mfcc)
     return data, np.array(target), filenames
 
@@ -73,11 +77,9 @@ def pre_process(X_test, X_train):
 
 def get_dataframe_first_match(df, row, column):
     match = df.loc[row, column]
-
     if isinstance(match, pyparsing.basestring):
         return match
-
-    match = np.nan if match.empty else match.iat[0]
+    match = 'null' if math.isnan(match) else match.iat[0]
     return match
 
 
