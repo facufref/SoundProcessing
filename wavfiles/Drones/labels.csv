@@ -1,91 +1,91 @@
-fname,label,class
-background_06_02_01.wav,background_06_02_01,Noise
-background_06_02_02.wav,background_06_02_02,Noise
-background_06_02_03.wav,background_06_02_03,Noise
-background_06_02_04.wav,background_06_02_04,Noise
-background_06_02_05.wav,background_06_02_05,Noise
-background_06_02_06.wav,background_06_02_06,Noise
-background_06_02_07.wav,background_06_02_07,Noise
-background_06_02_08.wav,background_06_02_08,Noise
-background_06_02_09.wav,background_06_02_09,Noise
-background_06_02_10.wav,background_06_02_10,Noise
-background_06_02_11.txt.wav,background_06_02_11.txt,Noise
-background_06_02_11.wav,background_06_02_11,Noise
-background_06_02_12.wav,background_06_02_12,Noise
-background_06_02_13.wav,background_06_02_13,Noise
-background_06_02_14.wav,background_06_02_14,Noise
-background_06_02_15.wav,background_06_02_15,Noise
-background_06_02_16.wav,background_06_02_16,Noise
-background_06_02_18.wav,background_06_02_18,Noise
-background_06_02_19.wav,background_06_02_19,Noise
-background_06_02_20.wav,background_06_02_20,Noise
-background_07_02_17.wav,background_07_02_17,Noise
-background_eric_doing_stuff.wav,background_eric_doing_stuff,Noise
-background_in_air_iris.wav,background_in_air_iris,Noise
-background_in_air_iris_2.wav,background_in_air_iris_2,Noise
-background_in_air_iris_3.wav,background_in_air_iris_3,Noise
-canopy_heavy_wind.wav,canopy_heavy_wind,Noise
-canopy_up_01.wav,canopy_up_01,Noise
-canopy_up_03.wav,canopy_up_03,Noise
-eric_survey.wav,eric_survey,Noise
-foo.wav,foo,Noise
-gator.wav,gator,Noise
-goo2.wav,goo2,Noise
-in_air_iris_far_away.wav,in_air_iris_far_away,Noise
-in_air_iris_over_home_base.wav,in_air_iris_over_home_base,Noise
-long_background_01.wav,long_background_01,Noise
-long_background_02.wav,long_background_02,Noise
-long_background_03.wav,long_background_03,Noise
-long_background_04.wav,long_background_04,Noise
-long_background_05.wav,long_background_05,Noise
-long_background_06.wav,long_background_06,Noise
-long_background_07.wav,long_background_07,Noise
-motorcycle.wav,motorcycle,Noise
-train.wav,train,Noise
-train04.wav,train04,Noise
-train2.wav,train2,Noise
-train_03.wav,train_03,Noise
-train_and_gator.wav,train_and_gator,Noise
-purdue_P2_unloaded_up_down.wav,purdue_P2_unloaded_up_down,Unloaded
-WSU_P2_DOWN_UNLOADED.wav,WSU_P2_DOWN_UNLOADED,Unloaded
-WSU_P2_UNLOADED_BACK_AND_FORTH.wav,WSU_P2_UNLOADED_BACK_AND_FORTH,Unloaded
-WSU_P2_UNLOADED_UP_AND_DOWN.wav,WSU_P2_UNLOADED_UP_AND_DOWN,Unloaded
-6 Axis Gyro unloaded 1.wav,6 Axis Gyro unloaded 1,Unloaded
-6 Axis Gyro unloaded 2.wav,6 Axis Gyro unloaded 2,Unloaded
-6 Axis Gyro unloaded 3.wav,6 Axis Gyro unloaded 3,Unloaded
-6 Axis Gyro unloaded 4.wav,6 Axis Gyro unloaded 4,Unloaded
-Syma X20 unloaded 1.wav,Syma X20 unloaded 1,Unloaded
-Syma X20 unloaded 2.wav,Syma X20 unloaded 2,Unloaded
-Syma X20 unloaded 3.wav,Syma X20 unloaded 3,Unloaded
-Syma X20 unloaded 4.wav,Syma X20 unloaded 4,Unloaded
-Syma X20 unloaded 5.wav,Syma X20 unloaded 5,Unloaded
-Syma X5 unloaded 1.wav,Syma X5 unloaded 1,Unloaded
-Syma X5 unloaded 2.wav,Syma X5 unloaded 2,Unloaded
-Syma X5 unloaded 3.wav,Syma X5 unloaded 3,Unloaded
-Syma X5 unloaded 4.wav,Syma X5 unloaded 4,Unloaded
-Syma X5 unloaded 5.wav,Syma X5 unloaded 5,Unloaded
-Tarantula X6 unloaded 1.wav,Tarantula X6 unloaded 1,Unloaded
-Tarantula X6 unloaded 2.wav,Tarantula X6 unloaded 2,Unloaded
-Tarantula X6 unloaded 3.wav,Tarantula X6 unloaded 3,Unloaded
-Tarantula X6 unloaded 4.wav,Tarantula X6 unloaded 4,Unloaded
-Tarantula X6 unloaded 5.wav,Tarantula X6 unloaded 5,Unloaded
-Tarantula X6 unloaded 6.wav,Tarantula X6 unloaded 6,Unloaded
-Tarantula X6 unloaded 7.wav,Tarantula X6 unloaded 7,Unloaded
-Tarantula X6 unloaded 8.wav,Tarantula X6 unloaded 8,Unloaded
-unloaded.wav,unloaded,Unloaded
-unloaded1.wav,unloaded1,Unloaded
-unloaded2.wav,unloaded2,Unloaded
-unloaded4.wav,unloaded4,Unloaded
-WSU_P2_HIGH_LOADED_DOWN.wav,WSU_P2_HIGH_LOADED_DOWN,Loaded
-WSU_P2_LOADED_BACK_AND_FORTH.wav,WSU_P2_LOADED_BACK_AND_FORTH,Loaded
-WSU_P2_LOADED_BACK_AND_FORTH_2.wav,WSU_P2_LOADED_BACK_AND_FORTH_2,Loaded
-WSU_P2_LOADED_up_and_down.wav,WSU_P2_LOADED_up_and_down,Loaded
-loaded.wav,loaded,Loaded
-loaded1.wav,loaded1,Loaded
-loaded3.wav,loaded3,Loaded
-Syma loaded 1.wav,Syma loaded 1,Loaded
-Syma loaded 2.wav,Syma loaded 2,Loaded
-Syma loaded 3.wav,Syma loaded 3,Loaded
-Syma loaded 4.wav,Syma loaded 4,Loaded
-Syma loaded 5.wav,Syma loaded 5,Loaded
-Syma loaded6.wav,Syma loaded6,Loaded
+fname,label,class1,class2,class3
+background_06_02_01.wav,background_06_02_01,Noise,null,Noise
+background_06_02_02.wav,background_06_02_02,Noise,null,Noise
+background_06_02_03.wav,background_06_02_03,Noise,null,Noise
+background_06_02_04.wav,background_06_02_04,Noise,null,Noise
+background_06_02_05.wav,background_06_02_05,Noise,null,Noise
+background_06_02_06.wav,background_06_02_06,Noise,null,Noise
+background_06_02_07.wav,background_06_02_07,Noise,null,Noise
+background_06_02_08.wav,background_06_02_08,Noise,null,Noise
+background_06_02_09.wav,background_06_02_09,Noise,null,Noise
+background_06_02_10.wav,background_06_02_10,Noise,null,Noise
+background_06_02_11.txt.wav,background_06_02_11.txt,Noise,null,Noise
+background_06_02_11.wav,background_06_02_11,Noise,null,Noise
+background_06_02_12.wav,background_06_02_12,Noise,null,Noise
+background_06_02_13.wav,background_06_02_13,Noise,null,Noise
+background_06_02_14.wav,background_06_02_14,Noise,null,Noise
+background_06_02_15.wav,background_06_02_15,Noise,null,Noise
+background_06_02_16.wav,background_06_02_16,Noise,null,Noise
+background_06_02_18.wav,background_06_02_18,Noise,null,Noise
+background_06_02_19.wav,background_06_02_19,Noise,null,Noise
+background_06_02_20.wav,background_06_02_20,Noise,null,Noise
+background_07_02_17.wav,background_07_02_17,Noise,null,Noise
+background_eric_doing_stuff.wav,background_eric_doing_stuff,Noise,null,Noise
+background_in_air_iris.wav,background_in_air_iris,Noise,null,Noise
+background_in_air_iris_2.wav,background_in_air_iris_2,Noise,null,Noise
+background_in_air_iris_3.wav,background_in_air_iris_3,Noise,null,Noise
+canopy_heavy_wind.wav,canopy_heavy_wind,Noise,null,Noise
+canopy_up_01.wav,canopy_up_01,Noise,null,Noise
+canopy_up_03.wav,canopy_up_03,Noise,null,Noise
+eric_survey.wav,eric_survey,Noise,null,Noise
+foo.wav,foo,Noise,null,Noise
+gator.wav,gator,Noise,null,Noise
+goo2.wav,goo2,Noise,null,Noise
+in_air_iris_far_away.wav,in_air_iris_far_away,Noise,null,Noise
+in_air_iris_over_home_base.wav,in_air_iris_over_home_base,Noise,null,Noise
+long_background_01.wav,long_background_01,Noise,null,Noise
+long_background_02.wav,long_background_02,Noise,null,Noise
+long_background_03.wav,long_background_03,Noise,null,Noise
+long_background_04.wav,long_background_04,Noise,null,Noise
+long_background_05.wav,long_background_05,Noise,null,Noise
+long_background_06.wav,long_background_06,Noise,null,Noise
+long_background_07.wav,long_background_07,Noise,null,Noise
+motorcycle.wav,motorcycle,Noise,null,Noise
+train.wav,train,Noise,null,Noise
+train04.wav,train04,Noise,null,Noise
+train2.wav,train2,Noise,null,Noise
+train_03.wav,train_03,Noise,null,Noise
+train_and_gator.wav,train_and_gator,Noise,null,Noise
+purdue_P2_unloaded_up_down.wav,purdue_P2_unloaded_up_down,UAV,Unloaded,Unloaded
+WSU_P2_DOWN_UNLOADED.wav,WSU_P2_DOWN_UNLOADED,UAV,Unloaded,Unloaded
+WSU_P2_UNLOADED_BACK_AND_FORTH.wav,WSU_P2_UNLOADED_BACK_AND_FORTH,UAV,Unloaded,Unloaded
+WSU_P2_UNLOADED_UP_AND_DOWN.wav,WSU_P2_UNLOADED_UP_AND_DOWN,UAV,Unloaded,Unloaded
+6 Axis Gyro unloaded 1.wav,6 Axis Gyro unloaded 1,UAV,Unloaded,Unloaded
+6 Axis Gyro unloaded 2.wav,6 Axis Gyro unloaded 2,UAV,Unloaded,Unloaded
+6 Axis Gyro unloaded 3.wav,6 Axis Gyro unloaded 3,UAV,Unloaded,Unloaded
+6 Axis Gyro unloaded 4.wav,6 Axis Gyro unloaded 4,UAV,Unloaded,Unloaded
+Syma X20 unloaded 1.wav,Syma X20 unloaded 1,UAV,Unloaded,Unloaded
+Syma X20 unloaded 2.wav,Syma X20 unloaded 2,UAV,Unloaded,Unloaded
+Syma X20 unloaded 3.wav,Syma X20 unloaded 3,UAV,Unloaded,Unloaded
+Syma X20 unloaded 4.wav,Syma X20 unloaded 4,UAV,Unloaded,Unloaded
+Syma X20 unloaded 5.wav,Syma X20 unloaded 5,UAV,Unloaded,Unloaded
+Syma X5 unloaded 1.wav,Syma X5 unloaded 1,UAV,Unloaded,Unloaded
+Syma X5 unloaded 2.wav,Syma X5 unloaded 2,UAV,Unloaded,Unloaded
+Syma X5 unloaded 3.wav,Syma X5 unloaded 3,UAV,Unloaded,Unloaded
+Syma X5 unloaded 4.wav,Syma X5 unloaded 4,UAV,Unloaded,Unloaded
+Syma X5 unloaded 5.wav,Syma X5 unloaded 5,UAV,Unloaded,Unloaded
+Tarantula X6 unloaded 1.wav,Tarantula X6 unloaded 1,UAV,Unloaded,Unloaded
+Tarantula X6 unloaded 2.wav,Tarantula X6 unloaded 2,UAV,Unloaded,Unloaded
+Tarantula X6 unloaded 3.wav,Tarantula X6 unloaded 3,UAV,Unloaded,Unloaded
+Tarantula X6 unloaded 4.wav,Tarantula X6 unloaded 4,UAV,Unloaded,Unloaded
+Tarantula X6 unloaded 5.wav,Tarantula X6 unloaded 5,UAV,Unloaded,Unloaded
+Tarantula X6 unloaded 6.wav,Tarantula X6 unloaded 6,UAV,Unloaded,Unloaded
+Tarantula X6 unloaded 7.wav,Tarantula X6 unloaded 7,UAV,Unloaded,Unloaded
+Tarantula X6 unloaded 8.wav,Tarantula X6 unloaded 8,UAV,Unloaded,Unloaded
+unloaded.wav,unloaded,UAV,Unloaded,Unloaded
+unloaded1.wav,unloaded1,UAV,Unloaded,Unloaded
+unloaded2.wav,unloaded2,UAV,Unloaded,Unloaded
+unloaded4.wav,unloaded4,UAV,Unloaded,Unloaded
+WSU_P2_HIGH_LOADED_DOWN.wav,WSU_P2_HIGH_LOADED_DOWN,UAV,Loaded,Loaded
+WSU_P2_LOADED_BACK_AND_FORTH.wav,WSU_P2_LOADED_BACK_AND_FORTH,UAV,Loaded,Loaded
+WSU_P2_LOADED_BACK_AND_FORTH_2.wav,WSU_P2_LOADED_BACK_AND_FORTH_2,UAV,Loaded,Loaded
+WSU_P2_LOADED_up_and_down.wav,WSU_P2_LOADED_up_and_down,UAV,Loaded,Loaded
+loaded.wav,loaded,UAV,Loaded,Loaded
+loaded1.wav,loaded1,UAV,Loaded,Loaded
+loaded3.wav,loaded3,UAV,Loaded,Loaded
+Syma loaded 1.wav,Syma loaded 1,UAV,Loaded,Loaded
+Syma loaded 2.wav,Syma loaded 2,UAV,Loaded,Loaded
+Syma loaded 3.wav,Syma loaded 3,UAV,Loaded,Loaded
+Syma loaded 4.wav,Syma loaded 4,UAV,Loaded,Loaded
+Syma loaded 5.wav,Syma loaded 5,UAV,Loaded,Loaded
+Syma loaded6.wav,Syma loaded6,UAV,Loaded,Loaded
