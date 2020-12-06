@@ -22,10 +22,6 @@
     <list default="true" id="ed4eb55b-b070-4713-bd60-0b8d7c38cb83" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SoundDataManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/SoundDataManager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wavfiles/Drones/labels.csv" beforeDir="false" afterPath="$PROJECT_DIR$/wavfiles/Drones/labels.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wavfiles/Drones/labels2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/wavfiles/Drones/Loaded-Unloaded.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wavfiles/Drones/labels3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/wavfiles/Drones/UAV-noise.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +142,7 @@
       <workItem from="1605739639448" duration="2682000" />
       <workItem from="1605823621769" duration="12000" />
       <workItem from="1606922437605" duration="12110000" />
-      <workItem from="1607099489606" duration="21975000" />
+      <workItem from="1607099489606" duration="30324000" />
     </task>
     <servers />
   </component>
@@ -183,64 +179,64 @@
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1604342752912" />
     <state x="592" y="218" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604596859030" />
-    <state width="1877" height="347" key="GridCell.Tab.0.bottom" timestamp="1607208836045">
+    <state width="1877" height="347" key="GridCell.Tab.0.bottom" timestamp="1607212026323">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1604356446248" />
-    <state width="1877" height="347" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607208836045" />
+    <state width="1877" height="347" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607212026323" />
     <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604453729550" />
-    <state width="1877" height="347" key="GridCell.Tab.0.center" timestamp="1607208836045">
+    <state width="1877" height="347" key="GridCell.Tab.0.center" timestamp="1607212026323">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1604356446247" />
-    <state width="1877" height="347" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607208836045" />
+    <state width="1877" height="347" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607212026323" />
     <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604453729550" />
-    <state width="1877" height="347" key="GridCell.Tab.0.left" timestamp="1607208836045">
+    <state width="1877" height="347" key="GridCell.Tab.0.left" timestamp="1607212026323">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1604356446247" />
-    <state width="1877" height="347" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607208836045" />
+    <state width="1877" height="347" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607212026323" />
     <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604453729550" />
-    <state width="1877" height="347" key="GridCell.Tab.0.right" timestamp="1607208836045">
+    <state width="1877" height="347" key="GridCell.Tab.0.right" timestamp="1607212026323">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1604356446247" />
-    <state width="1877" height="347" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607208836045" />
+    <state width="1877" height="347" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607212026323" />
     <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604453729550" />
-    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1607208836046">
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1607212026323">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.bottom/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1604356446248" />
-    <state width="1877" height="347" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607208836046" />
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607212026323" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604453729550" />
-    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1607208836045">
+    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1607212026323">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.center/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1604356446248" />
-    <state width="1877" height="347" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607208836045" />
+    <state width="1877" height="347" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607212026323" />
     <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1604453729550" />
-    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1607208836045">
+    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1607212026323">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.left/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1604356446248" />
-    <state width="1877" height="347" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607208836045" />
+    <state width="1877" height="347" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607212026323" />
     <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1604453729550" />
-    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1607208836045">
+    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1607212026323">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1604356446248" />
-    <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607208836045" />
+    <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607212026323" />
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604453729550" />
     <state x="369" y="115" key="SettingsEditor" timestamp="1604368081047">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="461" y="165" key="SettingsEditor/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1604345893624" />
     <state x="369" y="115" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604368081047" />
-    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1605719050983">
+    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1607211934790">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="968" height="528" key="XDebugger.FullValuePopup/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1604355612538" />
-    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605719050983" />
+    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607211934790" />
     <state x="2587" y="119" width="586" height="801" key="find.popup" timestamp="1606926613461">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -253,6 +249,11 @@
           <url>file://$PROJECT_DIR$/test/test_SoundProcessor.py</url>
           <line>111</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/SoundDataManager.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -273,6 +274,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SoundProcessing$Unittests_for_test_SoundProcessor_SoundProcessorTest_test_apply_mfcc_should_return_valid_mfcc.coverage" NAME="Unittests for test_SoundProcessor.SoundProcessorTest.test_apply_mfcc_should_return_valid_mfcc Coverage Results" MODIFIED="1604346823455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/SoundProcessing$Main.coverage" NAME="Main Coverage Results" MODIFIED="1607208737607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SoundProcessing$Main.coverage" NAME="Main Coverage Results" MODIFIED="1607211843814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

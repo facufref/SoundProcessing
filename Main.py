@@ -45,20 +45,22 @@ def main():
     X_train_loaded_unloaded, y_train_loaded_unloaded, X_train_uav_noise, y_train_uav_noise = split_uav_criteria(data, target, train_index)
     X_test_loaded_unloaded, y_test_loaded_unloaded, X_test_uav_noise, y_test_uav_noise = split_uav_criteria(data, target, test_index)
 
-    clf_uav_noise = get_trained_classifier(X_train_uav_noise, y_train_uav_noise, X_test_uav_noise, y_test_uav_noise, "svm")
+    print("Report UAV vs Noise")
+    clf_uav_noise = get_trained_classifier(X_train_uav_noise, y_train_uav_noise, X_test_uav_noise, y_test_uav_noise, "gnb")
     predictions = np.array(clf_uav_noise.get_predictions(X_test_processed), dtype="object")
-    clf_loaded_unloaded = get_trained_classifier(X_train_loaded_unloaded, y_train_loaded_unloaded, X_test_loaded_unloaded, y_test_loaded_unloaded, "svm")
+    print("Report Loaded vs Unloaded")
+    clf_loaded_unloaded = get_trained_classifier(X_train_loaded_unloaded, y_train_loaded_unloaded, X_test_loaded_unloaded, y_test_loaded_unloaded, "gnb")
 
     for index in range(predictions.size):
         if predictions[index] == 'UAV':
             pred_loaded_unloaded = clf_loaded_unloaded.get_predictions(X_test_processed[index].reshape(1, -1))
             predictions[index] = pred_loaded_unloaded[0]
 
-    print("Final Report Split")
+    print("Final Report in Sequence")
     print(classification_report(y_test, predictions))
 
-    print("Final Report Integrated")
-    clf = get_trained_classifier(X_train, y_train, X_test, y_test, "svm")
+    print("Final Report All Together")
+    clf = get_trained_classifier(X_train, y_train, X_test, y_test, "gnb")
 
 
 if __name__ == '__main__':
